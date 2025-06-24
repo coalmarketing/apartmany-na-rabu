@@ -1,0 +1,96 @@
+{
+  "common": {
+    "navigation": {
+      "home": "Home",
+      "apartments": "Apartments",
+      "locality": "Location",
+      "contact": "Contact"
+    },
+    "buttons": {
+      "book": "Book Now",
+      "contact": "Contact Us",
+      "more": "Learn More",
+      "interested": "I'm Interested",
+      "sold": "Sold",
+      "menu": "MENU",
+      "close": "Close menu",
+      "apartments_offer": "View Apartments"
+    }
+  },
+  "home": {
+    "title": "Exclusive Apartments",
+    "subtitle": "on the magical island of RAB",
+    "hero_title": "RAB ISLAND",
+    "hero_subtitle": "PARADISE AND HEART OF CROATIA"
+  },
+  "apartments": {
+    "title": "Choose from Four Apartments",
+    "floor": "floor",
+    "interior_area": "Interior Area",
+    "terrace": "Terrace",
+    "terraces": "Terraces",
+    "living_room": "Living Room with Kitchen",
+    "bedroom": "Bedroom",
+    "bathroom": "Bathroom",
+    "apartment_detail": "Apartment Details",
+    "price": {
+      "title": "Apartment Price",
+      "on_request": "On Request"
+    },
+    "legal_notice": "The apartment area on this website refers to the floor area determined according to Government Regulation No. 366/2013 Coll., extended by the area of balconies/loggias/terraces belonging to the apartment.",
+    "disclaimer": "The furniture shown, built-in wardrobes, kitchen unit including appliances and washing machine are not part of the house delivery and are for illustration purposes only. All information published in this document is non-binding, for marketing purposes only, and cannot be construed as an offer to conclude a contract nor can it be relied upon."
+  },
+  "contact": {
+    "title": "Contact Us",
+    "name": "ANETA",
+    "surname": "FRYDRYCHOVÁ",
+    "phone": "+420 111 222 333",
+    "email": "jmeno@domena.cz"
+  },
+  "footer": {
+    "copyright": "copyright 2024"
+  },
+  "error": {
+    "title": "Something went wrong!",
+    "try_again": "Try again",
+    "not_found": "Page not found",
+    "back_home": "Back to home"
+  },
+  "location": {
+    "activities_title": "Activities on Rab",
+    "map": {
+      "description": "Location of the apartment and a brief text about its position and advantages. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Sed elit dui, pellentesque a, faucibus vel, interdum nec,"
+    },
+    "info": {
+      "address": "Apartment address",
+      "title": "Near the apartment",
+      "distances": {
+        "beach": "beach",
+        "restaurant": "restaurant",
+        "bakery": "bakery",
+        "shop": "shop",
+        "pharmacy": "pharmacy",
+        "marina": "marina",
+        "ferry": "ferry"
+      }
+    },
+    "activities": {
+      "beaches": {
+        "title": "Sandy Beaches",
+        "description": "Lopar, often called the 'sandy paradise', is exceptional for its concentration of natural sandy beaches – among them the most famous Paradise Beach (Rajska plaža), stretching for 1.5-2 km, with shallow water entry ideal for children and swimmers. The beach has been awarded the Blue Flag and was included in CNN's list of 100 most beautiful world beaches. Nearby are smaller sandy bays (Livačina, Ciganka, Sahara), often without infrastructure but perfect for quieter swimming."
+      },
+      "trips": {
+        "title": "Trips on Rab",
+        "description": "The Lopar peninsula and surrounding islands (Goli otok, Grgur, Lukovac, Školjić) offer beautiful scenery and interesting places – for example, a geological park with sandstone pyramids and numerous fossils. Nearby are smaller sandy bays (Livačina, Ciganka, Sahara), often without infrastructure but perfect for quieter swimming."
+      },
+      "relax": {
+        "title": "Well-deserved Relaxation",
+        "description": "Lopar isn't just about beaches, but also about relaxing in nature – you can enjoy peace in smaller bays away from crowds or walks through the pine forest near Paradise Beach. Beach bars, water parks, parasailing, and evening sunset enjoyment by the sea are available. An ideal place for moments of tranquility, good wine, and undisturbed rest with a sea view."
+      },
+      "kids": {
+        "title": "Great Activities for Kids",
+        "description": "Paradise Beach is a children's dream – shallow water, beautiful sand, and rich infrastructure (slides, water park, beach volleyball). Children will enjoy building sandcastles and safe swimming there. Smaller beaches like Livačina or Ciganka also provide a safe environment – the sea is gradual and calm. Additionally, you can involve them in geological expeditions in Lopar Geopark, where they can find fossils and interesting rock formations."
+      }
+    }
+  }
+} 

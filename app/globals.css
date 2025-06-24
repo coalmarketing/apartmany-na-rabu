@@ -1,0 +1,151 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-lato);
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-lato), sans-serif;
+}
+
+/* Font weights */
+.font-thin {
+  font-weight: 200;
+}
+
+.font-light {
+  font-weight: 300;
+}
+
+.font-regular {
+  font-weight: 400;
+}
+
+.font-medium {
+  font-weight: 500;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+.font-black {
+  font-weight: 900;
+}
+
+.lato-thin {
+  font-family: var(--font-lato), sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.lato-light {
+  font-family: var(--font-lato), sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.lato-regular {
+  font-family: var(--font-lato), sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.lato-bold {
+  font-family: var(--font-lato), sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.lato-black {
+  font-family: var(--font-lato), sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.lato-thin-italic {
+  font-family: var(--font-lato), sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.lato-light-italic {
+  font-family: var(--font-lato), sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.lato-regular-italic {
+  font-family: var(--font-lato), sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.lato-bold-italic {
+  font-family: var(--font-lato), sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.lato-black-italic {
+  font-family: var(--font-lato), sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
+
+/* Swiper styles */
+.swiper {
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+}
+
+.swiper-slide {
+  width: auto !important;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.5;
+  transition: opacity 0.3s ease;
+}
+
+.swiper-slide-active {
+  opacity: 1;
+  z-index: 1;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  background: none;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+  transform: scale(1);
+}
+
+.swiper-button-disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}

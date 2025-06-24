@@ -1,0 +1,96 @@
+{
+  "common": {
+    "navigation": {
+      "home": "Domů",
+      "apartments": "Apartmány",
+      "locality": "Lokalita",
+      "contact": "Kontakt"
+    },
+    "buttons": {
+      "book": "Rezervovat",
+      "contact": "Kontaktovat",
+      "more": "Více informací",
+      "interested": "Mám zájem",
+      "sold": "Prodáno",
+      "menu": "MENU",
+      "close": "Zavřít menu",
+      "apartments_offer": "Nabídka apartmánů"
+    }
+  },
+  "home": {
+    "title": "Apartmány na kouzelném",
+    "subtitle": "ostrově RAB - LOPAR",
+    "hero_title": "OSTROV RAB",
+    "hero_subtitle": "RÁJ A SRDCE CHORVATSKA"
+  },
+  "apartments": {
+    "title": "Vyberte si ze čtyř apartmánů",
+    "floor": "patro",
+    "interior_area": "Vnitřní užitná plocha",
+    "terrace": "Terasa",
+    "terraces": "Terasy",
+    "living_room": "Obývací pokoj s kuchyní",
+    "bedroom": "Ložnice",
+    "bathroom": "Koupelna",
+    "apartment_detail": "Detail apartmánu",
+    "price": {
+      "title": "Cena apartmánu",
+      "on_request": "Na vyžádání"
+    },
+    "legal_notice": "Výměrou apartmánů na těchto webových stránkách se rozumí podlahová plocha stanovená dle nařízení vlády č. 366/2013 Sb., rozšířená o výměru balkonů/ lodžií / teras přináležejících k apartmánu.",
+    "disclaimer": "Zobrazené vybavení nábytkem, vestavěné skříně, kuchyňská linka včetně spotřebičů a pračky nejsou součástí dodávky domu a jsou pouze ilustrační. Veškeré informace publikované v tomto dokumentu jsou nezávazné, mají pouze ilustrační charakter pro marketingové účely a nelze je vykládat jako nabídku na uzavření smlouvy a ani se jich nelze dovolávat."
+  },
+  "contact": {
+    "title": "Kontaktujte nás",
+    "name": "ANETA",
+    "surname": "FRYDRYCHOVÁ",
+    "phone": "+420 111 222 333",
+    "email": "jmeno@domena.cz"
+  },
+  "footer": {
+    "copyright": "copyright 2024"
+  },
+  "error": {
+    "title": "Něco se pokazilo!",
+    "try_again": "Zkusit znovu",
+    "not_found": "Stránka nenalezena",
+    "back_home": "Zpět na hlavní stránku"
+  },
+  "location": {
+    "activities_title": "Vyžití na Rabu",
+    "map": {
+      "description": "Umístění apartmánu a krátký text o jeho poloze a výhodách. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Sed elit dui, pellentesque a, faucibus vel, interdum nec,"
+    },
+    "info": {
+      "address": "Adresa apartmánu",
+      "title": "V blízkosti apartmánu",
+      "distances": {
+        "beach": "pláž",
+        "restaurant": "restaurace",
+        "bakery": "pekárna",
+        "shop": "obchod",
+        "pharmacy": "lékárna",
+        "marina": "marina",
+        "ferry": "trajekt"
+      }
+    },
+    "activities": {
+      "beaches": {
+        "title": "Písečné pláže",
+        "description": "Lopar, často nazývaný \"písečný ráj\", je výjimečný svou koncentrací přírodních písečných pláží – mezi nimi nejznámější Rajska pláž (Paradise Beach), sahající na 1,5–2 km, s mělkým vstupem do moře ideálním pro děti i plavce. Pláž získala Modrou vlajku a byla zařazena na seznam CNN 100 nejkrásnějších světových pláží. Vedle jsou i menší písečné zátoky (Livačina, Ciganka, Sahara), často bez infrastruktury, ale perfektní pro klidnější koupání."
+      },
+      "trips": {
+        "title": "Výlety na Rabu",
+        "description": "Poloostrov Lopar a okolní ostrovy (Goli otok, Grgur, Lukovac, Školjić) nabízejí krásné scenérie a zajímavá místa – např. geologický park s pyramidami z pískovců a množstvím fosilií. Vedle jsou i menší písečné zátoky (Livačina, Ciganka, Sahara), často bez infrastruktury, ale perfektní pro klidnější koupání."
+      },
+      "relax": {
+        "title": "Zasloužený relax",
+        "description": "Lopar není jen o plážích, ale i relaxu v přírodě – můžete si užít klid v menších zátokách bez davů nebo procházky borovým lesem u Rajské pláže. K dispozici jsou plážové bary, aquaparky, parasailing a večerní vychutnání západu slunce u moře. Ideální místo pro chvíle klidu, dobré víno a nerušený odpočinek s výhledem na moře."
+      },
+      "kids": {
+        "title": "Velké vyžití pro děti",
+        "description": "Rajska plaža je snem dětí – mělká voda, překrásný písek a bohatá infrastruktura (skluzavky, aquapark, beach-volejbal). Děti si tam užijí stavění hradů z písku i bezpečné koupání. Menší pláže jako Livačina nebo Ciganka také poskytují bezpečné prostředí – moře je pozvolné a klidné. Navíc máte možnost zapojit je do geologických výprav v geoparku Lopar, kde lze najít fosilie i zajímavé skalní formace."
+      }
+    }
+  }
+} 
