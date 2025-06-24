@@ -1,11 +1,10 @@
 'use client'
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import OptimizedImage from './OptimizedImage';
 import { apartments } from '../data/apartments';
 import Image from 'next/image';
 import ContactSection from './ContactSection';
 import { useI18n, useCurrentLocale } from '../i18n/client';
-import { Swiper, SwiperSlide } from 'swiper/react';
 
 interface DetailApartmentSliderProps {
   apartmentId: number;

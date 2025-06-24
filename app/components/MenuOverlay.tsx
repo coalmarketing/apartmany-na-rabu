@@ -3,7 +3,6 @@
 import { useState, useEffect } from 'react';
 import { useRouter, usePathname } from 'next/navigation';
 import { useI18n, useCurrentLocale } from '../i18n/client';
-import Link from 'next/link';
 
 export default function MenuOverlay() {
   const [open, setOpen] = useState(false);

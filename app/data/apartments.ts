@@ -7,7 +7,7 @@ interface Room {
   bold?: boolean;
 }
 
-interface Apartment {
+export interface Apartment {
   id: number;
   title: string;
   floor: {

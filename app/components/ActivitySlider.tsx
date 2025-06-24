@@ -2,7 +2,6 @@
 
 import { useState } from 'react';
 import Image from 'next/image';
-import { useI18n } from '../i18n/client';
 
 interface ActivitySliderProps {
   title: string;
@@ -11,7 +10,6 @@ interface ActivitySliderProps {
 }
 
 export default function ActivitySlider({ title, description, images }: ActivitySliderProps) {
-  const t = useI18n();
   const [imgIdx, setImgIdx] = useState(0);
   const currentImage = images[imgIdx];
 

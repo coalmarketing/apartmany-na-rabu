@@ -35,7 +35,7 @@ export default function Slider() {
     const height = 0.6 * window.innerHeight;
     setImageHeight(height);
     setImageWidth(Math.round(height * aspectRatio));
-  }, []);
+  }, [aspectRatio]);
 
   const handlePrev = () => {
     if (swiperRef.current && swiperRef.current.swiper) {

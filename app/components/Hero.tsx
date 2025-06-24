@@ -32,7 +32,13 @@ export default function Hero() {
 
       {/* Obsah */}
       <div className="flex flex-col items-center pt-28">
-        <img src="/img/Rab_logo_white.svg" alt="Logo Apartmány na Rabu" className="w-[450px] mt-12" />
+        <Image 
+          src="/img/Rab_logo_white.svg" 
+          alt="Logo Apartmány na Rabu" 
+          width={450} 
+          height={100}
+          className="mt-12" 
+        />
         <p className="mt-20 text-[60px] lato-light text-center max-w-3xl leading-[1.1]">
           {t('home.title')}<br />{t('home.subtitle')}
         </p>

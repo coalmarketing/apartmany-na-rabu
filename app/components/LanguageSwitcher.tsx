@@ -1,6 +1,6 @@
 'use client'
 
-import { useI18n, useCurrentLocale } from '../i18n/client'
+import { useCurrentLocale } from '../i18n/client'
 import { useRouter, usePathname } from 'next/navigation'
 
 export default function LanguageSwitcher() {

@@ -1,7 +1,5 @@
 'use client';
 
-import LanguageSwitcher from './LanguageSwitcher';
-import MenuOverlay from './MenuOverlay';
 import OptimizedImage from './OptimizedImage';
 import { useI18n } from '../i18n/client';
 

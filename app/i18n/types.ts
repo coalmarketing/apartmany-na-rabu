@@ -1,5 +1,3 @@
-import type { createI18nServer } from 'next-international/server'
-
 const i18n = {
   common: {
     navigation: {
@@ -114,7 +112,7 @@ type Prev = [never, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10,
 export type TranslationKeys = Paths<typeof i18n>
 
 declare module 'next-international/server' {
-  export function createI18nServer<Locales extends Record<string, () => Promise<any>>>(config: Locales): {
+  export function createI18nServer<Locales extends Record<string, () => Promise<Record<string, unknown>>>>(config: Locales): {
     getI18n: () => (key: TranslationKeys) => string;
     getScopedI18n: () => <Scope extends keyof typeof i18n>(scope: Scope) => (key: Paths<(typeof i18n)[Scope]>) => string;
     getStaticParams: () => Promise<{ locale: keyof Locales }[]>;
@@ -122,7 +120,7 @@ declare module 'next-international/server' {
 }
 
 declare module 'next-international/client' {
-  export function createI18nClient<Locales extends Record<string, () => Promise<any>>>(config: Locales): {
+  export function createI18nClient<Locales extends Record<string, () => Promise<Record<string, unknown>>>>(config: Locales): {
     useI18n: () => (key: TranslationKeys) => string;
     useScopedI18n: () => <Scope extends keyof typeof i18n>(scope: Scope) => (key: Paths<(typeof i18n)[Scope]>) => string;
     I18nProviderClient: React.FC<{ locale: keyof Locales; children: React.ReactNode }>;

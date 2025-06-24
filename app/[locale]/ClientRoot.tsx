@@ -7,7 +7,7 @@ export default function ClientRoot({
   locale,
 }: {
   children: React.ReactNode
-  locale: string
+  locale: 'cs' | 'en'
 }) {
   return (
     <I18nProviderClient locale={locale}>

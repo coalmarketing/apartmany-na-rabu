@@ -1,19 +1,20 @@
-'use client';
-
 import type { ReactNode } from 'react';
 import MenuOverlay from '../components/MenuOverlay';
 import LanguageSwitcher from '../components/LanguageSwitcher';
 import I18nProviderWrapper from './I18nProviderWrapper';
-import { useParams } from 'next/navigation';
+import { getStaticParams } from '../i18n/server';
+
+export function generateStaticParams() {
+  return getStaticParams();
+}
 
 export default function LocaleLayout({
   children,
+  params: { locale },
 }: {
   children: ReactNode;
+  params: { locale: 'cs' | 'en' };
 }) {
-  const params = useParams();
-  const locale = params.locale as string;
-
   return (
     <I18nProviderWrapper locale={locale}>
       {/* Přepínač jazyků vlevo nahoře */}

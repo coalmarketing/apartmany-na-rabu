@@ -5,11 +5,10 @@ import ContactSection from '../components/ContactSection';
 import Slider from '../components/Slider';
 import Footer from '../components/Footer';
 
-export default async function Page({ params }: { params: { locale: string } }) {
-  const { locale } = await params;
-  
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+export default async function Page({ params }: any) {
   return (
-    <ClientRoot locale={locale}>
+    <ClientRoot locale={params.locale}>
       <Hero />
       <Slider />
       <Apartments />
