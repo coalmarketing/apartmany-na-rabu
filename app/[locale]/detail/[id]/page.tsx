@@ -13,6 +13,6 @@ export async function generateStaticParams() {
 }
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
-export default function ApartmentDetailPage({ params }: any) {
+export default async function ApartmentDetailPage({ params }: any) {
   return <DetailClient id={params.id} />
 } 

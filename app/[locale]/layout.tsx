@@ -8,15 +8,15 @@ export function generateStaticParams() {
   return getStaticParams();
 }
 
-export default function LocaleLayout({
+export default async function LocaleLayout({
   children,
-  params: { locale },
+  params,
 }: {
   children: ReactNode;
   params: { locale: 'cs' | 'en' };
 }) {
   return (
-    <I18nProviderWrapper locale={locale}>
+    <I18nProviderWrapper locale={params.locale}>
       {/* Přepínač jazyků vlevo nahoře */}
       <div className="absolute top-8 left-8 md:top-16 md:left-48 z-50">
         <LanguageSwitcher />
