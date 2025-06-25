@@ -6,9 +6,11 @@ import Slider from '../components/Slider';
 import Footer from '../components/Footer';
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
-export default async function Page({ params }: any) {
+export default async function Page({ params }: { params: Promise<{ locale: 'cs' | 'en' }> }) {
+  const { locale } = await params;
+  
   return (
-    <ClientRoot locale={params.locale}>
+    <ClientRoot locale={locale}>
       <Hero />
       <Slider />
       <Apartments />

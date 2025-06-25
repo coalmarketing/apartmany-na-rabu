@@ -21,12 +21,12 @@ export default function ActivitySlider({ title, description, images }: ActivityS
   };
 
   return (
-    <section className="w-full py-24 bg-white overflow-hidden">
-      <div className="container max-w-6xl mx-auto px-4 flex flex-col gap-12">
-        <h2 className="text-3xl font-light text-left">{title}</h2>
+    <section className="w-full py-8 bg-white overflow-hidden">
+      <div className="container max-w-6xl mx-auto flex flex-col gap-12">
+        <h2 className="text-3xl font-light text-left px-4">{title}</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
           <div className="text-left">
-            <p className="text-[18px] font-regular leading-snug w-[70%]">{description}</p>
+            <p className="text-[18px] font-regular leading-snug w-[70%] px-4">{description}</p>
           </div>
           <div className="flex flex-col items-center">
             <div className="w-full h-[320px] md:h-[360px] flex items-center justify-center">

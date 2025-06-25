@@ -20,6 +20,11 @@ export default function OptimizedImage({
   unoptimized = false,
 }: OptimizedImageProps) {
   if (!src) return null;
+  
+  // Automaticky nastav unoptimized pro SVG soubory
+  const isSvg = src.endsWith('.svg');
+  const shouldUnoptimize = unoptimized || isSvg;
+  
   return (
     <Image
       src={src}
@@ -29,7 +34,7 @@ export default function OptimizedImage({
       priority={priority}
       className={className}
       quality={90}
-      unoptimized={unoptimized}
+      unoptimized={shouldUnoptimize}
       sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
     />
   )

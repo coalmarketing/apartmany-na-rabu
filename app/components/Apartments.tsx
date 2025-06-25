@@ -16,9 +16,9 @@ export default function Apartments() {
 
   return (
     <section id="apartmany" className="py-24 bg-white">
-      <div className="container max-w-6xl mx-auto px-4">
+      <div className="container max-w-6xl mx-auto">
         {/* Nadpis a čára */}
-        <h2 className="text-[40px] lato-regular text-[#1D2A40] text-left mb-4">
+        <h2 className="text-[40px] lato-regular text-[#1D2A40] text-left mb-4 px-4">
           {t('apartments.title')}
         </h2>
         <div className="border-t border-gray-300 w-full max-w-3xl mb-12 text-left mx-0" />

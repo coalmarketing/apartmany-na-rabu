@@ -14,7 +14,7 @@ export default function MenuOverlay() {
   const menuItems = [
     { label: t('common.navigation.home'), href: '/' },
     { label: t('common.navigation.apartments'), href: '#apartmany' },
-    { label: t('common.navigation.locality'), href: '/lokalita' },
+    { label: t('common.navigation.locality'), href: 'lokalita' },
     { label: t('common.navigation.contact'), href: '#kontakt' },
   ];
 
@@ -47,7 +47,7 @@ export default function MenuOverlay() {
         router.push(homePath);
       }
     } else {
-      const destination = href === '/' ? `/${locale}` : `/${locale}${href}`;
+      const destination = href === '/' ? `/${locale}` : `/${locale}/${href}`;
       router.push(destination);
     }
   };
@@ -72,11 +72,11 @@ export default function MenuOverlay() {
     <>
       {/* Tlačítko menu */}
       <button
-        className="fixed cursor-pointer top-16 right-48 z-50 w-32 h-32 rounded-full bg-[#1D2A40] text-[white] flex items-center justify-center text-base lato-bold shadow-lg focus:outline-none"
+        className="fixed cursor-pointer top-8 right-8 md:top-16 md:right-48 z-50 w-16 h-16 md:w-32 md:h-32 rounded-full bg-[#1D2A40] text-[white] flex items-center justify-center text-xs md:text-base lato-bold shadow-lg focus:outline-none"
         onClick={() => setOpen(true)}
         aria-label={t('common.buttons.menu')}
       >
-        <span className="text-[white] text-md tracking-widest">{t('common.buttons.menu')}</span>
+        <span className="text-[white] text-md md:text-lg tracking-widest">{t('common.buttons.menu')}</span>
       </button>
 
       {/* Overlay menu */}

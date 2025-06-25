@@ -4,8 +4,8 @@ export default function LokalitaInfo() {
   const t = useI18n();
 
   return (
-    <section className="container max-w-6xl mx-auto px-4 bg-white py-0">
-      <div className="max-w-6xl mx-auto flex flex-col px-4">
+    <section className="container max-w-6xl mx-auto bg-white py-0">
+      <div className="max-w-6xl mx-auto flex flex-col mx-4">
         <p className="mb-16 text-lg font-regular">
           {t('location.info.address')}: č.p. 534<br/>
           51280, Lopar, Chorvatsko<br/>

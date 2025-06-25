@@ -6,8 +6,8 @@ export default function LokalitaMap() {
   
   return (
     <section className="bg-white py-16">
-      <div className="container max-w-6xl mx-auto px-4">
-        <div className="max-w-xl text-left px-4">
+      <div className="container max-w-6xl mx-auto">
+        <div className="max-w-xl text-left mx-4">
           <p className="text-2xl font-light leading-snug mb-16">
             {t('location.map.description')}
           </p>
@@ -19,7 +19,7 @@ export default function LokalitaMap() {
           alt="Mapa Rab"
           width={1920}
           height={600}
-          className="w-full h-auto"
+          className="w-full h-auto md:h-auto h-96 object-cover"
         />
       </div>
     </section>

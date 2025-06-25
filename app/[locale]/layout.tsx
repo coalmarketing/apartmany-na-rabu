@@ -1,4 +1,5 @@
 import type { ReactNode } from 'react';
+import { notFound } from 'next/navigation';
 import MenuOverlay from '../components/MenuOverlay';
 import LanguageSwitcher from '../components/LanguageSwitcher';
 import I18nProviderWrapper from './I18nProviderWrapper';
@@ -13,10 +14,17 @@ export default async function LocaleLayout({
   params,
 }: {
   children: ReactNode;
-  params: { locale: 'cs' | 'en' };
+  params: Promise<{ locale: 'cs' | 'en' }>;
 }) {
+  const { locale } = await params;
+  
+  // Validace locale
+  if (locale !== 'cs' && locale !== 'en') {
+    notFound();
+  }
+  
   return (
-    <I18nProviderWrapper locale={params.locale}>
+    <I18nProviderWrapper locale={locale}>
       {/* Přepínač jazyků vlevo nahoře */}
       <div className="absolute top-8 left-8 md:top-16 md:left-48 z-50">
         <LanguageSwitcher />

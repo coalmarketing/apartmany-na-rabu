@@ -19,7 +19,7 @@ export default function DetailApartmentSlider({ apartmentId }: DetailApartmentSl
   const t = useI18n();
   const locale = useCurrentLocale();
 
-  // Vrací pole dvou obrázků podle aktuálního indexu a cyklí, pokud je obrázků více
+  // Vrací pole dvou obrázků podle aktuálního indexu a cyklí, pokud je obrázků více (pouze pro desktop)
   const getVisibleImages = () => {
     if (images.length === 0) return [];
     if (images.length === 1) return [images[0]];
@@ -27,10 +27,19 @@ export default function DetailApartmentSlider({ apartmentId }: DetailApartmentSl
   };
   const visibleImages = getVisibleImages();
 
+  // Funkce pro posouvání na mobilu (jedna fotka)
+  const nextImage = () => {
+    setImgIdx((imgIdx + 1) % images.length);
+  };
+
+  const prevImage = () => {
+    setImgIdx((imgIdx - 1 + images.length) % images.length);
+  };
+
   return (
-    <div className="container max-w-6xl mx-auto px-4 py-24">
+    <div className="container max-w-6xl mx-auto py-24">
       {/* Text a parametry */}
-      <div className="mb-12">
+      <div className="mb-12 mx-4">
         <div className="text-2xl md:text-3xl text-[#757575] mb-6 lato-light max-w-xl">
           {apartment.description[locale]}
         </div>
@@ -43,7 +52,8 @@ export default function DetailApartmentSlider({ apartmentId }: DetailApartmentSl
 
       {/* Slider obrázků */}
       <div className="flex items-center justify-center gap-8 mb-16">
-        <div className="flex gap-8 w-[1320px] justify-center items-center">
+        {/* Desktop verze - dvě fotky */}
+        <div className="hidden md:flex gap-8 w-[1320px] justify-center items-center">
           {visibleImages.map((img, i) => (
             <div key={i} className="flex-shrink-0 w-[650px] h-[375px] flex items-center justify-center bg-white overflow-hidden">
               <OptimizedImage
@@ -56,10 +66,25 @@ export default function DetailApartmentSlider({ apartmentId }: DetailApartmentSl
             </div>
           ))}
         </div>
+
+        {/* Mobilní verze - jedna fotka přes celou šířku */}
+        <div className="md:hidden w-full relative">
+          <div className="w-full h-[375px] flex items-center justify-center bg-white overflow-hidden">
+            {images.length > 0 && (
+              <OptimizedImage
+                src={images[imgIdx]}
+                alt={apartment.title}
+                width={650}
+                height={375}
+                className="w-full h-full object-cover"
+              />
+            )}
+          </div>
+        </div>
       </div>
 
-      {/* Ovládání slideru pod obrázky */}
-      <div className="flex items-center justify-center gap-48 mt-8 mb-16">
+      {/* Ovládání slideru pod obrázky - pouze pro desktop */}
+      <div className="hidden md:flex items-center justify-center gap-48 mt-8 mb-16">
         <button
           aria-label="Předchozí obrázky"
           onClick={() => setImgIdx((imgIdx - 2 + images.length) % images.length)}
@@ -76,9 +101,27 @@ export default function DetailApartmentSlider({ apartmentId }: DetailApartmentSl
         </button>
       </div>
 
+      {/* Ovládání slideru pro mobilní verzi */}
+      <div className="md:hidden flex items-center justify-center gap-48 mb-16">
+        <button
+          aria-label="Předchozí obrázek"
+          onClick={prevImage}
+          disabled={images.length === 0}
+        >
+          <Image src="/img/Arrow_L_icon.svg" alt="Předchozí" width={40} height={40} />
+        </button>
+        <button
+          aria-label="Další obrázek"
+          onClick={nextImage}
+          disabled={images.length === 0}
+        >
+          <Image src="/img/Arrow_R_icon.svg" alt="Další" width={40} height={40} />
+        </button>
+      </div>
+
       {/* Půdorys a tabulka */}
-      <h2 className="text-2xl mb-4 lato-light">{t('apartments.apartment_detail')}</h2>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-16 items-center">
+      <h2 className="text-2xl mb-4 lato-light mx-4">{t('apartments.apartment_detail')}</h2>
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-16 items-center mx-4">
         <div>
           {plan && (
             <OptimizedImage
@@ -110,7 +153,7 @@ export default function DetailApartmentSlider({ apartmentId }: DetailApartmentSl
       </div>
 
       {/* Cena a poznámky */}
-      <div className="mt-24">
+      <div className="mt-24 mx-4">
         <h2 className="text-2xl mb-6 lato-light">{t('apartments.price.title')}</h2>
         <div className="text-2xl mb-12 lato-bold">{t('apartments.price.on_request')}</div>
         <button 

@@ -8,7 +8,7 @@ export default function Footer() {
 
   return (
     <div className="bg-black text-white py-3 px-4">
-      <div className="w-full px-4 md:px-8 lg:px-32 mx-auto flex flex-col md:flex-row justify-between items-center gap-4 md:gap-0">
+      <div className="w-full px-4 md:px-8 lg:px-32 mx-auto flex flex-row justify-between items-center gap-4 md:gap-0">
         <div className="flex items-center gap-2">
           <Image 
             src="/img/copyright.png" 

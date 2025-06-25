@@ -23,7 +23,7 @@ export default function LokalitaHero() {
 
       {/* Obsah */}
       <div className="flex flex-col items-center justify-center flex-1 mt-32">
-        <h1 className="md:text-[64px] font-light text-center leading-tight drop-shadow-lg">
+        <h1 className="text-5xl md:text-7xl font-light text-center leading-tight drop-shadow-lg">
           {t('home.hero_title')}<br/>
           {t('home.hero_subtitle')}
         </h1>

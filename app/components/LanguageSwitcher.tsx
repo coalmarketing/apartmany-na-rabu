@@ -17,11 +17,11 @@ export default function LanguageSwitcher() {
   }
 
   return (
-    <div className="flex items-center gap-1 px-6 py-6 rounded-full border border-white bg-transparent text-white lato-bold text-[12px]" style={{backdropFilter: 'blur(2px)'}}>
+    <div className="flex items-center gap-[0.15rem] md:gap-2 px-4 py-3 md:px-8 md:py-6 rounded-full border border-white bg-transparent text-white lato-bold text-[12px] md:text-[12px]" style={{backdropFilter: 'blur(2px)'}}>
       <button
         onClick={() => switchLanguage('cs')}
         className={`focus:outline-none transition-all ${locale === 'cs' ? 'underline underline-offset-4' : ''}`}
-        style={{ minWidth: 32 }}
+        style={{ minWidth: 20 }}
       >
         CZ
       </button>
@@ -29,7 +29,7 @@ export default function LanguageSwitcher() {
       <button
         onClick={() => switchLanguage('en')}
         className={`focus:outline-none transition-all ${locale === 'en' ? 'underline underline-offset-4' : ''}`}
-        style={{ minWidth: 32 }}
+        style={{ minWidth: 20 }}
       >
         EN
       </button>

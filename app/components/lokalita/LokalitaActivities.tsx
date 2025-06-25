@@ -26,8 +26,8 @@ export default function LokalitaActivities() {
   const t = useI18n();
 
   return (
-    <section className="container max-w-6xl mx-auto px-4 pt-24 pb-8">
-      <h2 className="text-[40px] lato-regular text-[#1D2A40] text-left mb-4">
+    <section className="container max-w-6xl mx-auto pt-24 pb-8">
+      <h2 className="text-[40px] lato-regular text-[#1D2A40] text-left mb-4 mx-4">
         {t('location.activities_title')}
       </h2>
       <div className="border-t border-gray-300 w-full max-w-3xl mb-12 text-left mx-0" />
