@@ -113,8 +113,14 @@ export default function Slider() {
             alt="Current"
             width={35}
             height={35}
-            className="mx-16"
-            style={{ width: 'auto' }}
+            className="mx-16 hidden md:block w-10"
+          />
+          <Image
+            src="/img/Hand_icon.svg"
+            alt="Current"
+            width={35}
+            height={35}
+            className="mx-16 block md:hidden w-12"
           />
           <button onClick={handleNext}>
             <Image
